@@ -1,36 +1,23 @@
-import ReactDOM from "react-dom";
 import React, { useState } from "react";
 
-const App = () => {
-  const [isActive, setIsActive] = useState(true);
+export default function App() {
+  const [isActive, setIsActive] = useState(false);
 
-  const handleChangeColor = () => {
+  const toggleIsActive = () => {
     setIsActive(!isActive);
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
-      }}
-    >
+    <div>
       <button
+        onClick={toggleIsActive}
         style={{
           color: isActive ? "#fff" : "#000",
           backgroundColor: isActive ? "#008000" : "#ff0000",
-          width: "150px",
-          borderRadius: "24px",
-          padding: "10px",
-          cursor: "pointer",
         }}
-        onClick={handleChangeColor}
       >
-        {isActive ? "ON" : "OFF"}
+        Click me
       </button>
     </div>
   );
-};
-export default App;
+}
