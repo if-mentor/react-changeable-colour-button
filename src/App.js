@@ -5,6 +5,7 @@ export default function App() {
   console.log(isActive);
   const toggleIsActive = () => {
     setIsActive(!isActive);
+    console.log(isActive);
   };
 
   return (
