@@ -2,10 +2,9 @@ import { useState } from "react";
 
 export default function App() {
   const [isActive, setIsActive] = useState(false);
-  console.log(isActive);
+  console.log("ステートの初期状態は：", isActive);
   const toggleIsActive = () => {
     setIsActive(!isActive);
-    console.log(isActive);
   };
 
   return (
