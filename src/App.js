@@ -28,8 +28,8 @@ export default function App() {
           fontSize: "16px",
           cursor: "pointer",
           transition: "all 0.3s ease",
-          width: "100px", // ボタンの幅を固定
-          height: "50px", // ボタンの高さを固定
+          width: "100px",
+          height: "50px",
         }}
       >
         {isActive ? "ON" : "OFF"}
